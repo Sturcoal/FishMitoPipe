@@ -1,4 +1,4 @@
-# `FishMitoPipe` the fish mitochondrial genome analysis pipeline
+# `FishMitoPipe` the pipeline for fish mitochondrial genome manipulation before phylogenetic analysis
 
 A step-by-step guide to parsing fish mitochondrial genomes for phylogenetic reconstructions based on output from the MitoAnnotator resource (Iwasaki et al., 2013) http://mitofish.aori.u-tokyo.ac.jp/annotation/input.html
 
