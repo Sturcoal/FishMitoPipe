@@ -212,7 +212,7 @@ done
 `D-loop_matrix.sh`
 ```bash
 #!/bin/bash
-FILES=$(cat ID.list) # трюк с файлом в качестве переменной
+FILES=$(cat ID.list)
 
 for f in $FILES
 do
