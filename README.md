@@ -132,7 +132,7 @@ done
 
 12. Creating a list of the unique names of the fragments.
 ```bash
-ls *-* | cut -d "." -f1 | cut -d "_" -f3 | cut -d "-" -f2,3 | sort | uniq | tail -n +2 > Fragments_list.txt
+ls *-* | cut -d "." -f1 | cut -d "_" -f3 | cut -d "-" -f2,3 | sort | uniq > Fragments_list.txt
 ```
 
 13. Creating the matrices based on the fragments.
