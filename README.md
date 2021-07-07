@@ -1,8 +1,12 @@
-# `FishMitoPipe` the pipeline for fish mitochondrial genome manipulation before phylogenetic analysis
+# `FishMitoPipe` the pipeline for fish mitochondrial genome manipulation before phylogenetic analysis 
 
 A step-by-step guide to parsing fish mitochondrial genomes for phylogenetic reconstructions based on output from the MitoAnnotator resource (Iwasaki et al., 2013) http://mitofish.aori.u-tokyo.ac.jp/annotation/input.html
 
 This pipeline accepts the annotated fish mitochondrial genomes as input and allows its partitioning into fragments, alignment, and making a supermatrix for subsequent phylogenetic analysis.
+
+
+
+![FishMitoPipe workflow](Workflow%20FishMitoPipe.png)
 
 ## Before you begin
 
@@ -132,7 +136,7 @@ done
 
 12. Creating a list of the unique names of the fragments.
 ```bash
-ls *-* | cut -d "." -f1 | cut -d "_" -f3 | cut -d "-" -f2,3 | sort | uniq > Fragments_list.txt
+ls *-* | cut -d "." -f1 | cut -d "_" -f3 | cut -d "-" -f2,3 | sort | uniq | tail -n +2 > Fragments_list.txt
 ```
 
 13. Creating the matrices based on the fragments.
@@ -212,7 +216,7 @@ done
 `D-loop_matrix.sh`
 ```bash
 #!/bin/bash
-FILES=$(cat ID.list)
+FILES=$(cat ID.list) # трюк с файлом в качестве переменной
 
 for f in $FILES
 do
