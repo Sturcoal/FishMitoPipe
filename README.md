@@ -279,3 +279,9 @@ For example, a line of code which uses phyutility to concatenate a matrix of fra
 ```bash
 phyutility -concat -in D-loop.fasta 16S.fasta 12S.fasta COI.fasta ND4.fasta -out Supermatrix.nexus
 ```
+
+
+
+If you use this pipeline please cite it as follows:
+
+
