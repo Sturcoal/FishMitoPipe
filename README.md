@@ -284,4 +284,4 @@ phyutility -concat -in D-loop.fasta 16S.fasta 12S.fasta COI.fasta ND4.fasta -out
 
 If you use this pipeline please cite it as follows:
 
-
+Turanov S.V. A pipeline for building mitochondrial genome supermatrices for partitioned phylogenetic analysis of fish / Selected abstracts of Bioinformatics: from Algorithms to Applications 2021 Conference. // BMC Bioinformatics. 2021 Dec 22;22(Suppl 16):591. doi: 10.1186/s12859-021-04475-z. PMID: 34937560; PMCID: PMC8692822. 
